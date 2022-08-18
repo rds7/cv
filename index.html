@@ -1,60 +1,114 @@
+<!-- HTML Boilerplate code: ready made code which is needed in the begining
+     it contains doctype, head(which contains basic info about the page like
+     charset , title etc), body -->
 <!DOCTYPE html>
-<!-- doctype helps browser to render our file as html document -->
-<html lang="en" dir="ltr">
+<html lang="en">
+  <!-- head contains info about the webpage and tells the browser how to 
+     handle the file -->
+  <head>
+    <!-- meta gives extra metadata to html document, also give info to search
+         engines about the webpage (that text you see under a url in google search) -->
+    <!-- UTF-8 is the encoding system i.e. it lists all the available data we
+         can use in our webpage to render it correctly-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishabh's Personal Site</title>
+  </head>
+  <body>
+    <table cellspacing="20">
+      <tr>
+        <td>
+          <!-- adding image -->
+          <img
+            src="images/rishabh.png"
+            height="180px"
+            width="180px"
+            alt="rishabh profile picture"
+          />
+        </td>
+        <td>
+          <h1>Rishabh Dev Singh</h1>
+          <!--p tag gives a new line and groups the data in one paragraph  -->
+          <p>
+            <em
+              >Student at <strong><a href="skit.ac.in">SKIT College</a></strong
+              >, Jaipur.</em
+            >
+          </p>
+          <!-- use em > i because i just italices the text while em puts more emphasis
+         similarly use strong > bold tag
+        <p><i>Student at <b>SKIT College, Jaipur.<b></i></p> -->
+          <p>
+            I am an undergraduate student of Information Technology. I love
+            coffee.
+          </p>
+        </td>
+      </tr>
+    </table>
 
-<head>
-  <meta charset="utf-8">
-  <!-- helps search engine, apppear in google search below the website -->
-  <title>Rishabh's Personel Site</title>
-  <!-- title appears where you bookmark the website or where tab opens -->
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-  <img src="pictures/rishabh.png" alt="Rishabh's profile picture" width="220" height="220">
-  <!-- alt is important, looked by google -->
-  <h1>Rishabh Dev Singh</h1>
-  <!-- em & strong put emphasis on words rather than just bold and italisizing them -->
-  <p><em>Student at <strong>SKIT Jaipur</strong>.</em></p>
-  <p>Just trying my hands on web development, stay tuned.</p>
-  <hr>
-  <h3>Favourite books</h3>
-  <ul>
-    <li>Steve Jobs Biography</li>
-    <li>To Kill A Mocking Bird</li>
-    <li>The Almanac of Naval Ravikant</li>
-  </ul>
-  <hr>
-  <h3>Education</h3>
-  <ul>
-    <li><a href="http://www.dpsrewari.com/">DPS Rewari</a></li>
-    <li><a href="https://www.xaviersbehror.org/">Xavier's Behror</a></li>
-    <li><a href="https://www.skit.ac.in/">SKIT Jaipur</a></li>
-  </ul>
-  <hr>
-  <h3>Skills</h3>
-  <table cellspacing="10">
-    <tr>
-      <td>Java</td>
-      <td>⭐⭐</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>⭐</td>
-    </tr>
-    <tr>
-      <td>Public Speaking</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Basketball</td>
-      <td>⭐⭐⭐</td>
-    </tr>
-  </table>
-  <hr>
-  <a href="hobbies.html">My Hobbies</a>
-  <a href="contact.html">Contact Me</a>
-
-</body>
-
+    <hr />
+    <h3>Favourite Movies</h3>
+    <!-- <ul> gives bulleted list -->
+    <ul>
+      <li>Avatar</li>
+      <li>Inception</li>
+      <li>Interstellar</li>
+    </ul>
+    <hr>
+    <table>
+      <!-- table using HTML is deprecated we use CSS instead -->
+      <!-- using thead and tbody is optional but use them to isolate header and body
+             so that we can cutomize them in future -->
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Course</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2019-2022</td>
+          <td>B.Tech.</td>
+        </tr>
+        <tr>
+          <td>2017-2018</td>
+          <td>XII</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Skills</h3>
+    <table cellspacing="10px">
+      <tr>
+        <td>
+            <!-- the below table tag placement is very important -->
+          <table> 
+            <tr>
+              <td>Basketball</td>
+              <td>⭐</td>
+            </tr>
+            <tr>
+              <td>Photography</td>
+              <td>⭐</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>Video Editing</td>
+              <td>⭐</td>
+            </tr>
+            <tr>
+              <td>Web Development</td>
+              <td>⭐</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <a href="hobbies.html">My Hobbies</a>
+    <a href="contact.html">Contact Me</a>
+  </body>
 </html>
