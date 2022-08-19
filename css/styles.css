@@ -1,19 +1,25 @@
 body {
-  background-color: #F6E7D8;
+  background-color: #eaf6f6;
 }
 
 hr {
-  width: 5%;
   border-style: none;
   border-top-style: dotted;
   border-color: grey;
-  border-width: 3px;
+  border-width: 5px;
+  width: 5%;
 }
 
 h1 {
-  color: #C65D7B;
+  color: #66bfbf;
 }
 
 h3 {
-  color: #C65D7B;
+  color: #66bfbf;
 }
+/* 
+class == .
+id == #
+id is unique
+class can be multiple i.e. can be used to group elements
+*/
