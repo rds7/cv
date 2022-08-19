@@ -3,34 +3,52 @@
      charset , title etc), body -->
 <!DOCTYPE html>
 <html lang="en">
-  <!-- head contains info about the webpage and tells the browser how to 
-     handle the file -->
   <head>
+    <!-- head contains info about the webpage and tells the browser how to 
+     handle the file -->
+
+    <meta charset="UTF-8" />
     <!-- meta gives extra metadata to html document, also give info to search
          engines about the webpage (that text you see under a url in google search) -->
     <!-- UTF-8 is the encoding system i.e. it lists all the available data we
          can use in our webpage to render it correctly-->
-    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rishabh's Personal Site</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- the link to external css file -->
+    <!-- 
+      body {
+        background-color: blue;
+      }
+      hr {
+        background-color: azure;
+        border-style: none;
+        height: 2px;
+        width: 30%; 
+      }
+      This is called Internal CSS, it's put into head tag 
+      **** hierarchy: inline css >> internal css >> external css ...
+    </style> -->
   </head>
+
   <body>
+    <!-- <body style="background-color: blue;"> == this is inline css-->
     <table cellspacing="20">
       <tr>
         <td>
-          <!-- adding image -->
           <img
             src="images/rishabh.png"
             height="180px"
             width="180px"
             alt="rishabh profile picture"
           />
+          <!-- adding image -->
         </td>
         <td>
           <h1>Rishabh Dev Singh</h1>
-          <!--p tag gives a new line and groups the data in one paragraph  -->
           <p>
+            <!--p tag gives a new line and groups the data in one paragraph  -->
             <em
               >Student at <strong><a href="skit.ac.in">SKIT College</a></strong
               >, Jaipur.</em
@@ -49,18 +67,18 @@
 
     <hr />
     <h3>Favourite Movies</h3>
-    <!-- <ul> gives bulleted list -->
     <ul>
       <li>Avatar</li>
       <li>Inception</li>
       <li>Interstellar</li>
     </ul>
-    <hr>
+    <!-- <ul> gives bulleted list -->
+    <hr />
     <table>
       <!-- table using HTML is deprecated we use CSS instead -->
-      <!-- using thead and tbody is optional but use them to isolate header and body
-             so that we can cutomize them in future -->
       <thead>
+        <!-- using thead and tbody is optional but use them to isolate header and body
+               so that we can cutomize them in future -->
         <tr>
           <th>Year</th>
           <th>Course</th>
@@ -81,8 +99,8 @@
     <table cellspacing="10px">
       <tr>
         <td>
-            <!-- the below table tag placement is very important -->
-          <table> 
+          <!-- the below table tag placement is very important -->
+          <table>
             <tr>
               <td>Basketball</td>
               <td>⭐</td>
